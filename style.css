@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Headland+One&display=swap');
+/* Reset and base styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    clip-path: polygon(00% 100%, 100% 0%, 100% 0%, 0% 0%);
+    background: #0b6fa5ce;
+}
+
+.hello {
+    font-family: 'Poppins', sans-serif;
+    height: 90vh;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+.text-over {
+    position: absolute;
+    font-family: 'Great Vibes', serif;
+    width: 100%;
+    top: 65%;
+    left: 10%;
+    font-size: 2rem;
+    line-height: 0.9;
+    color: #0b6fa5fb;
+}
+.name-indent {
+    display: inline-block;
+    padding-left: 100px;
+}
+.about-me {
+    display: inline;
+    text-align: center;
+}
+h2 {
+    font-family: 'Headland One', serif;
+}
+.about-me p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links a {
+    padding: 10px;
+    text-decoration: 0;
+    color: black;
+    transition: all 0.3s ease;
+}
+.social-links a:hover {
+    color: #0b6fa5fb;
+}
+.work-section,
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border: 0;
+
+    width: 70%;
+}
+.project-card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+.project-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding: 0 15px;
+}
+.project-repo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-desc {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #0b6fa5fb;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #0b6fa5fb;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    height: 60vh;
+}
+.footer-image {
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 720px) and (max-width: 1024px) {
+    .hello {
+        font-size: 1.5rem;
+        flex-direction: row;
+        padding: 0 50px;
+    }
+    .project-card {
+        width: 40%;
+    }
+    .project-cards {
+        gap: 80px;
+    }
+    .text-over {
+        font-size: 2.8rem;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-image {
+        width: 20rem;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hello {
+        flex-direction: row;
+        padding: 0 50px;
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        width: 30%;
+    }
+    .project-cards {
+        gap: 30px;
+    }
+    .text-over {
+        font-size: 3.1rem;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-image {
+        width: 20rem;
+        height: auto;
+        border-radius: 10px;
+    }
+}
